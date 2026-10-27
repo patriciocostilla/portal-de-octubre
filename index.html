@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#241321">
+  <meta name="description" content="Una pequeña aventura rosa hacia el próximo 29 de octubre. Cuenta regresiva con magia y dados.">
+  <title>Portal de Octubre · La próxima aventura</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="countdown.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header><a class="brand" href="./"><span aria-hidden="true">✧</span> PORTAL DE OCTUBRE</a><span class="edition">UNA AVENTURA CADA AÑO</span></header>
+  <main>
+    <div class="chapter"><span></span> MISIÓN PRINCIPAL · <span id="chapter-year">2026</span><span></span></div>
+    <div class="crest" aria-hidden="true"><svg viewBox="0 0 200 210"><path class="halo" d="M100 10 181 57 181 151 100 198 19 151 19 57Z"/><path d="m100 29 65 43-8 79-57 35-57-35-8-79Z M100 29 69 86 35 72 M100 29l31 57 34-14 M69 86h62l26 65-57-15-57 15Z M69 86l31 50 31-50 M100 136v50 M35 72l8 79 M165 72l-8 79"/><text x="100" y="113">29</text></svg><span class="crest-star s1">✦</span><span class="crest-star s2">✧</span></div>
+    <p class="eyebrow">EL DESTINO TIENE UNA FECHA</p>
+    <h1>La próxima aventura<br>comienza en <em>octubre.</em></h1>
+    <p class="intro">Prepará tus dados, guardá un poco de magia.<br>El portal se abre el <strong>29 de octubre.</strong></p>
+    <section class="timer-panel" aria-label="Cuenta regresiva al 29 de octubre">
+      <div class="panel-heading"><span>✧ &nbsp; TIEMPO HASTA EL PORTAL</span><span id="target-date">29 OCT 2026</span></div>
+      <div class="countdown" role="timer" aria-label="Tiempo restante">
+        <div><span class="number" id="days">--</span><span class="unit">DÍAS</span></div><b aria-hidden="true">:</b>
+        <div><span class="number" id="hours">--</span><span class="unit">HORAS</span></div><b aria-hidden="true">:</b>
+        <div><span class="number" id="minutes">--</span><span class="unit">MINUTOS</span></div><b aria-hidden="true">:</b>
+        <div><span class="number" id="seconds">--</span><span class="unit">SEGUNDOS</span></div>
+      </div>
+      <div class="progress-meta"><span>El viaje alrededor del sol</span><span id="progress-label">—</span></div>
+      <div class="progress" role="progressbar" aria-label="Progreso hacia el próximo 29 de octubre" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progress-fill"></div></div>
+      <p class="timezone">⌾ &nbsp; A medianoche, según tu hora local</p>
+    </section>
+    <div class="quest"><span class="quest-icon" aria-hidden="true">✦</span><div><p>Mientras tanto, una pequeña misión</p><span id="quest-text" aria-live="polite">Toda gran aventura empieza con una tirada de dados.</span></div><button id="roll" type="button"><span aria-hidden="true">◇</span> Tirar un d20 <span aria-hidden="true">↗</span></button></div>
+    <p class="arrival" id="arrival" aria-live="polite"></p>
+    <noscript><p>Activá JavaScript para ver la cuenta regresiva en tiempo real.</p></noscript>
+  </main>
+  <footer><span>HECHO DE MAGIA, ROSA Y UN POCO DE PACIENCIA</span><span aria-hidden="true">✧ &nbsp; 29 / 10 &nbsp; ✧</span><span>EL PRÓXIMO CAPÍTULO TE ESPERA</span></footer>
+</body>
+</html>
